@@ -1,0 +1,8 @@
+<header class="flex justify-between w-full">
+  <h1 class="sm:p-5 p-3 sm:text-6xl text-4xl font-semibold text-center">Mini Chat</h1>
+  @if (isLoggedIn) {
+    <button class="font-semibold cursor-pointer border-amber-200 border-l-3 sm:pl-10 sm:pr-10 pr-5 pl-5 sm:text-2xl text-md" (click)="handleSignout()">Log out</button>
+  } @else {
+    <div></div>
+  }
+</header>
